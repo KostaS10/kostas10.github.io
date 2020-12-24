@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Cloud Architecture, Automation and Infrastructure
+title: Cloud Infrastructure, Security and Automation
 email: kosta.sotic@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hey everyone, this blog is meant for all cloud enthusiast,
-  infrastructure and automation lovers.
+  Hey everyone, this blog is meant for all cloud enthusiasts,
+  with interest in infrastructure security and automation.
   If you like the content or want to discuss anything,
-  please don't hesitate to contact me,
+  please don't hesitate to contact me on social medias,
   I'd love to share opinions!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kostas10.github.io" # the base hostname & protocol for your site, e.g. http://example.com
