@@ -46,10 +46,21 @@ This Container access level is more restrictive in a way that anonymous requests
 
 Setting the Container to this access level means that anonymous access is disallowed and all those requests would result in a same error as before, ResourceNotFound. This access level is set by default regardless of the method you are using to create the Container.
 
-So if anonymous access is forbidden, how would you delegate access to Blobs? Autorizing options for Blobs are:
+So if anonymous access is forbidden, how would you delegate access to Blobs? Authorizing options for Blobs are:
 
 * Shared Key
 * Shared Access Signature
 * Azure Active Directory
+
+Shared Key authorization utilizes Access keys that are generated when you create Storage account and the keys grant you access to everything inside it, similar to a root/administrator account.
+Microsoft strongly suggests that the keys should not be distributed to others, hard-coded or stored in plane-text.
+
+Shared Access Signatures, also known as SAS, enables you to grant limited access to containers and blobs in your storage account. Using SAS you can specify which resources client has access to, permissions on those resources and for how long.
+
+Azure Active Directory can also be used as an authorization method so you can utilize Role-Based Access Control (RBAC).
+
+### Storage Account network security considerations
+
+
 
 
