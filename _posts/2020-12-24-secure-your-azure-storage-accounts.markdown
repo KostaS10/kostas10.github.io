@@ -24,7 +24,7 @@ Other than name that we have to give to that container, we are presented with a 
 
 We will discuss all of these options, and why you may opt for a certain level, depending on your use case.
 
-** Container level **
+**Container level**
 
 Setting your Container to Container level means that all container and blob data can be read by anonymous request, meaning that you don't put any restrictions to accessing the files stored there.
 
@@ -36,8 +36,20 @@ Also, direct link to accessing those Blobs is right there, so if we access that 
 
 <img src="https://infrasecurity.xyz/media/publicdocument.PNG" style="display: block; margin: auto;" />
 
-** Blob level **
+**Blob level**
 
 This Container access level is more restrictive in a way that anonymous requests now cannot list the Blobs in this Container, but if they know the exact name of a Blob in question, they can still see the Blob content. Listing Blobs results in an error.
 
 <img src="https://infrasecurity.xyz/media/enumerror.PNG" style="display: block; margin: auto;" />
+
+**Private level**
+
+Setting the Container to this access level means that anonymous access is disallowed and all those requests would result in a same error as before, ResourceNotFound. This access level is set by default regardless of the method you are using to create the Container.
+
+So if anonymous access is forbidden, how would you delegate access to Blobs? Autorizing options for Blobs are:
+
+* Shared Key
+* Shared Access Signature
+* Azure Active Directory
+
+
