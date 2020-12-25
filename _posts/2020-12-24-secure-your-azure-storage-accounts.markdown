@@ -20,4 +20,4 @@ Individual files are referred to as Blobs, and Blobs are contained inside of a C
 When we create Storage Account and want to store Blobs inside of it, we need to first create a Container where those Blobs will be stored.
 Other than name that we have to give to that container, we are presented with a choice of defining public access level on the Container.
 
-![Container access levels1](./media/blobaccesslevel.PNG)
+![Container access levels](./media/containeraccesslevel.PNG)
