@@ -24,10 +24,20 @@ Other than name that we have to give to that container, we are presented with a 
 
 We will discuss all of these options, and why you may opt for a certain level, depending on your use case.
 
-##### Container level
+** Container level **
 
 Setting your Container to Container level means that all container and blob data can be read by anonymous request, meaning that you don't put any restrictions to accessing the files stored there.
 
 In addition, as long as someone has the Storage account name and Container name they can list all of the Blobs located in there.
 
 <img src="https://infrasecurity.xyz/media/blobenum.PNG" style="display: block; margin: auto;" />
+
+Also, direct link to accessing those Blobs is right there, so if we access that URL we see the contents of the Blob.
+
+<img src="https://infrasecurity.xyz/media/publicdocument.PNG" style="display: block; margin: auto;" />
+
+** Blob level **
+
+This Container access level is more restrictive in a way that anonymous requests now cannot list the Blobs in this Container, but if they know the exact name of a Blob in question, they can still see the Blob content. Listing Blobs results in an error.
+
+<img src="https://infrasecurity.xyz/media/enumerror.PNG" style="display: block; margin: auto;" />
