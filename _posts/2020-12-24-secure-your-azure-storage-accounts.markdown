@@ -21,3 +21,13 @@ When we create Storage Account and want to store Blobs inside of it, we need to 
 Other than name that we have to give to that container, we are presented with a choice of defining public access level on the Container.
 
 <img src="https://infrasecurity.xyz/media/containeraccesslevel.PNG" style="display: block; margin: auto;" />
+
+We will discuss all of these options, and why you may opt for a certain level, depending on your use case.
+
+##### Container level
+
+Setting your Container to Container level means that all container and blob data can be read by anonymous request, meaning that you don't put any restrictions to accessing the files stored there.
+
+In addition, as long as someone has the Storage account name and Container name they can list all of the Blobs located in there.
+
+<img src="https://infrasecurity.xyz/media/blobenum.PNG" style="display: block; margin: auto;" />
