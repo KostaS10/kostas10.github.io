@@ -61,8 +61,9 @@ Azure Active Directory can also be used as an authorization method so you can ut
 
 ### Storage Account network security considerations
 
-By default, Storage Account allowes access from all networks, including the internet. Good things is that Azure provides us with Networking settings when configuring Storage Account so we can restrict access to certain Virtual Networks by changing the access option to Selected Networks. There is an option to whitelist public IP addresses and allow them access as well. That can be done from Firewall section of the Storage Account.
-Some additional exceptions to the firewall and access restrictions can be configured from the Exceptions portion of the configuration. All of the settings are shown in the screenshot below.
+By default, Storage Account allowes access from all networks, including the internet. Good things is that Azure provides us with Networking settings when configuring Storage Account so we can restrict access to certain Virtual Networks by changing the access option to **Selected Networks**. There is an option to whitelist public IP addresses and allow them access as well. That can be done from **Firewall** section of the Storage Account.
+
+Some additional exceptions to the firewall and access restrictions can be configured from the **Exceptions** portion of the configuration. All of the settings are shown in the screenshot below.
 
 <img src="https://infrasecurity.xyz/media/storagenetworking.PNG" style="display: block; margin: auto;" />
 
