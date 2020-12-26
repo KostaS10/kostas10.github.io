@@ -8,7 +8,7 @@ categories: Azure, Security, Storage Account
 ### What is Azure Storage account?
 
 Azure Storage account is a great service Microsoft provides for storing your data that is accessible from anywhere in the world over HTTP or HTTPS, but if missconfigured, it can mean that your data is exposed to people that should not have the access to it.
-It can contain blobs, files, queues, tables and disks and data your Azure storage account is durable and highly available, secure, and massively scalable.
+Azure Storage account can contain blobs, files, queues, tables and disks and data in your Azure storage account is durable and highly available, secure, and massively scalable.
 
 Because of all of this, we need to make sure that we are following security best practices and we will discuss them further in this post and we will focus specifically on Blob storage.
 
@@ -38,7 +38,9 @@ Also, direct link to accessing those Blobs is right there, so if we access that 
 
 **Blob level**
 
-This Container access level is more restrictive in a way that anonymous requests now cannot list the Blobs in this Container, but if they know the exact name of a Blob in question, they can still see the Blob content. Listing Blobs results in an error.
+This Container access level is more restrictive in a way that anonymous requests now cannot list the Blobs in this Container, but if they know the exact name of a Blob in question, they can still see the Blob content. Listing Blobs, however,
+
+ results in an error.
 
 <img src="https://infrasecurity.xyz/media/enumerror.PNG" style="display: block; margin: auto;" />
 
@@ -67,4 +69,12 @@ Some additional exceptions to the firewall and access restrictions can be config
 
 <img src="https://infrasecurity.xyz/media/storagenetworking.PNG" style="display: block; margin: auto;" />
 
+**Private endpoint connection**
+
+Another security feature that we can utilize to further restrict access to Storage accounts is to use Private endpoint connections.
+The private endpoints use an IP address from the Virtual Network in your Azure subscription for your Storage account service, and the data is accessed over a Private Link.
+
+What this all means is that the network traffic between the clients and the Storage account goes over the Virtual Network and a private link on the Microsoft backbone network, thus eliminating the need to go throught the internet. Private endpoints can be easily enabled from the same Networking blade in your Storage account settings.
+
+<img src="https://infrasecurity.xyz/media/privateendpoint.PNG" style="display: block; margin: auto;" />
 
