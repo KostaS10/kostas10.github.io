@@ -8,6 +8,7 @@ categories: Azure, Security, Storage Account
 ### What is Azure Storage account?
 ----------------------------------
 
+
 Azure Storage account is a great service Microsoft provides for storing your data that is accessible from anywhere in the world over HTTP or HTTPS, but if missconfigured, it can mean that your data is exposed to people that should not have the access to it.
 Azure Storage account can contain blobs, files, queues, tables and disks and data in your Azure storage account is durable and highly available, secure, and massively scalable.
 
