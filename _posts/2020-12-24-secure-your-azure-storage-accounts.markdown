@@ -8,12 +8,15 @@ categories: Azure, Security, Storage Account
 ### What is Azure Storage account?
 __________________________________
 
+
 Azure Storage account is a great service Microsoft provides for storing your data that is accessible from anywhere in the world over HTTP or HTTPS, but if missconfigured, it can mean that your data is exposed to people that should not have the access to it.
 Azure Storage account can contain blobs, files, queues, tables and disks and data in your Azure storage account is durable and highly available, secure, and massively scalable.
 
 Because of all of this, we need to make sure that we are following security best practices and we will discuss them further in this post and we will focus specifically on Blob storage.
 
 ### Blob storage security considerations
+________________________________________
+
 
 Just to cover the basics for those new to this Azure service, Azure Blob storage is an object storage optimized for storing large amount of unstructured data, examples being text or binary data.
 Individual files are referred to as Blobs, and Blobs are contained inside of a Container.
@@ -63,6 +66,8 @@ Shared Access Signatures, also known as SAS, enables you to grant limited access
 Azure Active Directory can also be used as an authorization method so you can utilize Role-Based Access Control (RBAC).
 
 ### Storage Account network security considerations
+___________________________________________________
+
 
 By default, Storage Account allowes access from all networks, including the internet. Good things is that Azure provides us with Networking settings when configuring Storage Account so we can restrict access to certain Virtual Networks by changing the access option to **Selected Networks**. There is an option to whitelist public IP addresses and allow them access as well. That can be done from **Firewall** section of the Storage Account.
 
