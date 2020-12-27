@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Secure your Azure Storage Accounts"
+title:  "Secure your Azure Storage accounts"
 date:   2020-12-24 13:12:36 +0200
-categories: Azure, Security, Storage Account
+categories: Azure, Security, Storage account
 ---
 
 ### What is Azure Storage account?
