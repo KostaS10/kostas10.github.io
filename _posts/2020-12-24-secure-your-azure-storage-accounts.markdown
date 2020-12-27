@@ -14,7 +14,7 @@ Azure Storage account can contain blobs, files, queues, tables and disks and dat
 
 Because of all of this, we need to make sure that we are following security best practices and we will discuss them further in this post and we will focus specifically on Blob storage.
 
-\
+<br>
 
 ### Blob storage security considerations
 ----------------------------------
@@ -67,7 +67,7 @@ Shared Access Signatures, also known as SAS, enables you to grant limited access
 
 Azure Active Directory can also be used as an authorization method so you can utilize Role-Based Access Control (RBAC).
 
-\
+<br>
 
 ### Storage Account network security considerations
 ----------------------------------
@@ -88,7 +88,7 @@ What this all means is that the network traffic between the clients and the Stor
 
 <img src="https://infrasecurity.xyz/media/privateendpoint.PNG" style="display: block; margin: auto;" />
 
-\
+<br>
 
 ### Final thoughts
 ----------------------------------
