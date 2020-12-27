@@ -4,16 +4,11 @@ title: About
 permalink: /about/
 ---
 
+Hey everyone, my name is Kosta Šotić and I am Azure Cloud Solutions Architect working in the Netherlands.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Passionate about Cloud infrastructure and Security, specifically in Azure. On a daily basis I am working with Windows/Linux, Infrastrucutre-as-Code, AzureDevOps and PowerShell, automating as much as possible along the way.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Certifications: 
+* Microsoft Certified Azure Solutions Architect Expert
+* Microsoft Certified Azure Administrator Associate
+* CCNA CyberOps
