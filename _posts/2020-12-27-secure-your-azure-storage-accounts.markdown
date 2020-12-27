@@ -44,15 +44,15 @@ Also, direct link to accessing those Blobs is right there, so if we access that 
 
 **Blob level**
 
-This Container access level is more restrictive in a way that anonymous requests now cannot list the Blobs in this Container, but if they know the exact name of a Blob in question, they can still see the Blob content. Listing Blobs, however,
+This Container access level is more restrictive in a way that anonymous requests now cannot list the Blobs in this Container, but if they know the exact name of a Blob in question, they can still see the Blob content. 
 
- results in an error.
+Listing Blobs, however, result in an error shown below.
 
 <img src="https://infrasecurity.xyz/media/enumerror.PNG" style="display: block; margin: auto;" />
 
 **Private level**
 
-Setting the Container to this access level means that anonymous access is disallowed and all those requests would result in a same error as before, ResourceNotFound. This access level is set by default regardless of the method you are using to create the Container.
+Setting the Container to this access level means that anonymous access is disallowed and all those requests would result in a same error as before, *ResourceNotFound*. This access level is set by default regardless of the method you are using to create the Container.
 
 So if anonymous access is forbidden, how would you delegate access to Blobs? Authorizing options for Blobs are:
 
@@ -61,7 +61,7 @@ So if anonymous access is forbidden, how would you delegate access to Blobs? Aut
 * Azure Active Directory
 
 Shared Key authorization utilizes Access keys that are generated when you create Storage account and the keys grant you access to everything inside it, similar to a root/administrator account.
-Microsoft strongly suggests that the keys should not be distributed to others, hard-coded or stored in plane-text.
+Microsoft strongly suggests that the keys should not be distributed to others, hard-coded or stored in plain text.
 
 Shared Access Signatures, also known as SAS, enables you to grant limited access to containers and blobs in your storage account. Using SAS you can specify which resources client has access to, permissions on those resources and for how long.
 
@@ -73,7 +73,9 @@ Azure Active Directory can also be used as an authorization method so you can ut
 ----------------------------------
 
 \
-By default, Storage Account allowes access from all networks, including the internet. Good things is that Azure provides us with Networking settings when configuring Storage Account so we can restrict access to certain Virtual Networks by changing the access option to **Selected Networks**. There is an option to whitelist public IP addresses and allow them access as well. That can be done from **Firewall** section of the Storage Account.
+By default, Storage Account allowes access from all networks, including the internet. Good things is that Azure provides us with Networking settings when configuring Storage Account so we can restrict access to certain Virtual Networks by changing the access option to **Selected Networks**. 
+
+There is an option to whitelist public IP addresses and allow them access as well. That can be done from **Firewall** section of the Storage Account.
 
 Some additional exceptions to the firewall and access restrictions can be configured from the **Exceptions** portion of the configuration. All of the settings are shown in the screenshot below.
 
@@ -96,4 +98,4 @@ What this all means is that the network traffic between the clients and the Stor
 \
 Azure Storage account is a great service that Microsoft provides for storing virtually unlimited amount of unstructured data but if missconfigured, your data may be accessible to users that should absolutely not have access to it.
 
-For this reason, when designing Azure solutions that would use this service it is very important to spend some time gathering the requirements and thinking about how and who is supposed to be accessing the data in Azure Storage accounts so you can take the most out of all of the network and security features Microsoft providers.
+For this reason, when designing Azure solutions that would use this service it is very important to spend some time gathering the requirements and thinking about how and who is supposed to be accessing the data in Azure Storage accounts, and for that you can use plently of network and security features that Microsoft providers.
