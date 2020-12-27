@@ -9,7 +9,7 @@ categories: Azure, Security, Storage account
 ----------------------------------
 
 \
-Azure Storage account is a great service Microsoft provides for storing your data that is accessible from anywhere in the world over HTTP or HTTPS, but if missconfigured, it can mean that your data is exposed to people that should not have the access to it.
+Azure Storage account is a great service Microsoft provides for storing your data that is accessible from anywhere in the world over HTTP or HTTPS, but if misconfigured, it can mean that your data is exposed to people that should not have the access to it.
 Azure Storage account can contain blobs, files, queues, tables and disks and data in your Azure storage account is durable and highly available, secure, and massively scalable.
 
 Because of all of this, we need to make sure that we are following security best practices and we will discuss them further in this post and we will focus specifically on Blob storage.
@@ -96,6 +96,6 @@ What this all means is that the network traffic between the clients and the Stor
 ----------------------------------
 
 \
-Azure Storage account is a great service that Microsoft provides for storing virtually unlimited amount of unstructured data but if missconfigured, your data may be accessible to users that should absolutely not have access to it.
+Azure Storage account is a great service that Microsoft provides for storing virtually unlimited amount of unstructured data but if misconfigured, your data may be accessible to users that should absolutely not have access to it.
 
 For this reason, when designing Azure solutions that would use this service it is very important to spend some time gathering the requirements and thinking about how and who is supposed to be accessing the data in Azure Storage accounts, and for that you can use plently of network and security features that Microsoft providers.
