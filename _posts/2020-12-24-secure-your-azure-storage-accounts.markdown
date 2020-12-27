@@ -13,7 +13,6 @@ Azure Storage account is a great service Microsoft provides for storing your dat
 Azure Storage account can contain blobs, files, queues, tables and disks and data in your Azure storage account is durable and highly available, secure, and massively scalable.
 
 Because of all of this, we need to make sure that we are following security best practices and we will discuss them further in this post and we will focus specifically on Blob storage.
-
 \
 ### Blob storage security considerations
 ----------------------------------
@@ -65,7 +64,6 @@ Microsoft strongly suggests that the keys should not be distributed to others, h
 Shared Access Signatures, also known as SAS, enables you to grant limited access to containers and blobs in your storage account. Using SAS you can specify which resources client has access to, permissions on those resources and for how long.
 
 Azure Active Directory can also be used as an authorization method so you can utilize Role-Based Access Control (RBAC).
-
 \
 ### Storage Account network security considerations
 ----------------------------------
@@ -85,7 +83,6 @@ The private endpoints use an IP address from the Virtual Network in your Azure s
 What this all means is that the network traffic between the clients and the Storage account goes over the Virtual Network and a private link on the Microsoft backbone network, thus eliminating the need to go throught the internet. Private endpoints can be easily enabled from the same Networking blade in your Storage account settings.
 
 <img src="https://infrasecurity.xyz/media/privateendpoint.PNG" style="display: block; margin: auto;" />
-
 \
 ### Final thoughts
 ----------------------------------
