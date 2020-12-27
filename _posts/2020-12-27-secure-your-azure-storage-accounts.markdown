@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Secure your Azure Storage accounts"
-date:   2020-12-24 13:12:36 +0200
+date:   2020-12-27 13:12:36 +0200
 categories: Azure, Security, Storage account
 ---
 
