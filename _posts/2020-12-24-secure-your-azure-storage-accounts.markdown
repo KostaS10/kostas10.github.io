@@ -84,3 +84,10 @@ What this all means is that the network traffic between the clients and the Stor
 
 <img src="https://infrasecurity.xyz/media/privateendpoint.PNG" style="display: block; margin: auto;" />
 
+### Final thoughts
+----------------------------------
+
+\
+Azure Storage account is a great service that Microsoft provides for storing virtually unlimited amount of unstructured data but if missconfigured, your data may be accessible to users that should abslutely not have access to it.
+
+For this reason, when designing Azure solutions that would use this service it is very important to spend some time gathering the requirements and thinking about how and who is supposed to be accessing the data in Azure Storage accounts so you can take the most out of all of the network and security features Microsoft providers.
