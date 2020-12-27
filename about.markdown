@@ -2,7 +2,6 @@
 layout: page
 title: About
 permalink: /about/
-<link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
 ---
 
 Hey everyone, my name is Kosta Šotić and I am Azure Cloud Solutions Architect working in the Netherlands.
