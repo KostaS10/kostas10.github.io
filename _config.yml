@@ -21,7 +21,7 @@
 title: Cloud Infrastructure, Security and Automation
 email: kosta.sotic@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hey everyone, this blog is meant for all cloud enthusiasts,
+  Blog meant for all cloud enthusiasts,
   with interest in infrastructure security and automation.
   If you like the content or want to discuss anything,
   please don't hesitate to contact me on social medias,
@@ -35,6 +35,7 @@ linkedin_username: kostasotic
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 permalink: /:title/
 
