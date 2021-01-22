@@ -1,18 +1,17 @@
 ---
 layout: post
 title:  "Audit Azure Container Registry images"
-date:   2020-12-27 13:12:36 +0200
+date:   2021-01-22 13:12:36 +0200
 categories: Azure, Security, Container Registry
 ---
 
-### What is Azure Storage account?
+### What is Azure Container Registry?
 ----------------------------------
 
 \
-Azure Storage account is a great service Microsoft provides for storing your data that is accessible from anywhere in the world over HTTP or HTTPS, but if misconfigured, it can mean that your data is exposed to people that should not have the access to it.
-Azure Storage account can contain blobs, files, queues, tables and disks and data in your Azure storage account is durable and highly available, secure, and massively scalable.
+Containerization has been a top topic for quite some time, with Docker being the industry favourite.
 
-Because of all of this, we need to make sure that we are following security best practices and we will discuss them further in this post and we will focus specifically on Blob storage.
+Azure provides a service called Azure Container Registry which is a managed, private Docker registry service.
 
 <br>
 
