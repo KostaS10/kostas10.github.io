@@ -12,5 +12,6 @@ Strong focus on Cybersecurity and making sure Azure infrastrucure is following b
 
 Certifications: 
 * Microsoft Certified Azure Solutions Architect Expert
+* Microsoft Certified Azure Security Engineer Associate
 * Microsoft Certified Azure Administrator Associate
 * CCNA CyberOps
