@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Secure your Azure Storage accounts"
+title:  "Audit Azure Container Registry images"
 date:   2020-12-27 13:12:36 +0200
-categories: Azure, Security, Storage account
+categories: Azure, Security, Container Registry
 ---
 
 ### What is Azure Storage account?
