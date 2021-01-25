@@ -37,7 +37,17 @@ You also need to be sure that Container Registry option is turned on so you can 
 \
 Now that we have Azure Defender for Container Registries enabled, we can start assessing our container images. Image scans are triggered on every push or import, and if the image has been pulled within the last 30 days. When the scan completes, we can see the results in Azure Security Center recommendations.
 
-To show this in practice, let's show an example where we have pushed one Docker image from Docker Hub to our Container Registry. Image in question is names *Damn Vulnerable Web App*, that is usually used for practicing security and introducing engineers to ways you can exploit vulnerable applications. You can find the image in the link below:
+To show this in practice, let's show an example where we have pushed one Docker image from Docker Hub to our Container Registry. Image in question is named *Damn Vulnerable Web App*, that is usually used for practicing exploits and introducing engineers to ways you can exploit vulnerable applications. You can find the image in the link below:
 
-https://hub.docker.com/r/vulnerables/web-dvwa
+<a href="https://hub.docker.com/r/vulnerables/web-dvwa">https://hub.docker.com/r/vulnerables/web-dvwa</a>
+
+I've created an Azure Container Registry (ACR) named *kostaacr* beforehand, and steps that we should do before actually pushing image to ACR:
+
+* Login to Docker Registry
+* Pull Docker image from Docker Hub
+* Tag image with ACR name so we can push to ACR
+* Push image to our ACR
+
+<img src="https://infrasecurity.xyz/media/acr1.PNG" style="display: block; margin: auto;" />
+
 
