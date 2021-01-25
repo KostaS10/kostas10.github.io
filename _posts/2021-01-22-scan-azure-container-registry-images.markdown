@@ -31,7 +31,7 @@ You also need to be sure that Container Registry option is turned on so you can 
 
 <br>
 
-### Vulnerability assessment in practice
+### Pushing images to ACR
 ----------------------------------
 
 \
@@ -50,4 +50,13 @@ I've created an Azure Container Registry (ACR) named *kostaacr* beforehand, and 
 
 <img src="https://infrasecurity.xyz/media/acr1.PNG" style="display: block; margin: auto;" />
 
+To verify that the image has been pushed to our ACR, we can check Azure Portal and see that the image is there.
 
+<img src="https://infrasecurity.xyz/media/acr2.PNG" style="display: block; margin: auto;" />
+
+<br>
+
+### Vulnerability assessment in practice
+----------------------------------
+
+\
