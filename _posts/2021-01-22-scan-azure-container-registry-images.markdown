@@ -60,3 +60,10 @@ To verify that the image has been pushed to our ACR, we can check Azure Portal a
 ----------------------------------
 
 \
+Since the image is now in our ACR, Azure Security Center will scan it and if it finds some vulnerabilities we can see it's findings in Recommendation section in ASC.
+
+<img src="https://infrasecurity.xyz/media/asc1.PNG" style="display: block; margin: auto;" />
+
+Clicking on the recommendations will open up a new blade where you can see more in detail Azure Container Registries in question, number of vulnerabilities and those vulnerabilities sorted by severity.
+
+<img src="https://infrasecurity.xyz/media/asc2.PNG" style="display: block; margin: auto;" />
