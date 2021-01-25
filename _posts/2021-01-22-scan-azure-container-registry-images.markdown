@@ -11,11 +11,11 @@ categories: Azure, Security, Container Registry
 \
 Containerization has been a top topic for quite some time, with Docker being the industry favourite.
 
-Azure provides a service called Azure Container Registry which is a managed, private Docker registry service.
+Azure provides a service called Azure Container Registry which is a managed, private Docker registry service. It allows you to store Docker images which you can use for deploying Docker containers, for example using Azure Container Instances (ACI) or through Azure managed Kubernetes service (AKS).
 
 <br>
 
-### Blob storage security considerations
+### Azure Defender for Container Registries
 ----------------------------------
 
 \
