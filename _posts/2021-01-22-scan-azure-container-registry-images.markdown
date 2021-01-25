@@ -25,7 +25,7 @@ Microsoft providers us with a way to get an easy win in this domain with Azure S
 
 <img src="https://infrasecurity.xyz/media/ascdefender.PNG" style="display: block; margin: auto;" />
 
-You also need to be sure that Container Registry option is turned on so you can start using it.
+You also need to be sure that Container Registry option is turned on so you can start using Azure Defender for Container Registries.
 
 <img src="https://infrasecurity.xyz/media/ascdefender2.PNG" style="display: block; margin: auto;" />
 
