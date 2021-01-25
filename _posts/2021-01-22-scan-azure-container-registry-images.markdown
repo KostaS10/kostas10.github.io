@@ -67,3 +67,12 @@ Since the image is now in our ACR, Azure Security Center will scan it and if it 
 Clicking on the recommendations will open up a new blade where you can see more in detail Azure Container Registries in question, number of vulnerabilities and those vulnerabilities sorted by severity.
 
 <img src="https://infrasecurity.xyz/media/asc2.PNG" style="display: block; margin: auto;" />
+
+All found vulnerabilities are presented in a list and by clicking on each vulnerability provides an option to drill more into each of those vulnerabilities along with:
+
+* Short description of vulnerability
+* Additional information about the vulnerability such as CVE number, CVSS score, Severity and if vulnerability is patched
+* Remediation steps so we can fix if fix is available
+* Information about specific image in our registry that is affected
+
+<img src="https://infrasecurity.xyz/media/asc3.PNG" style="display: block; margin: auto;" />
