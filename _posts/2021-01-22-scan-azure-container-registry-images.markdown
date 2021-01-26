@@ -41,11 +41,11 @@ To show this in practice, let's show an example where we have pushed one Docker 
 
 <a href="https://hub.docker.com/r/vulnerables/web-dvwa">https://hub.docker.com/r/vulnerables/web-dvwa</a>
 
-I've created an Azure Container Registry (ACR) named *kostaacr* beforehand, and steps that we should do before actually pushing image to ACR:
+I've created an Azure Container Registry (ACR) named *kostaacr* beforehand, and here are the few steps that we should do before actually pushing image to ACR:
 
 * Login to Docker Registry
 * Pull Docker image from Docker Hub
-* Tag image with ACR name so we can push to ACR
+* Tag image with ACR name so we can push it to ACR
 * Push image to our ACR
 
 <img src="https://infrasecurity.xyz/media/acr1.PNG" style="display: block; margin: auto;" />
@@ -60,7 +60,7 @@ To verify that the image has been pushed to our ACR, we can check Azure Portal a
 ----------------------------------
 
 \
-Since the image is now in our ACR, Azure Security Center will scan it and if it finds some vulnerabilities we can see it's findings in Recommendation section in ASC.
+Since the image is now in our ACR, Azure Security Center will scan it and if it finds some vulnerabilities we can see it's findings in the Recommendation section in ASC.
 
 <img src="https://infrasecurity.xyz/media/asc1.PNG" style="display: block; margin: auto;" />
 
@@ -76,3 +76,15 @@ All found vulnerabilities are presented in a list and by clicking on each vulner
 * Information about specific image in our registry that is affected
 
 <img src="https://infrasecurity.xyz/media/asc3.PNG" style="display: block; margin: auto;" />
+
+<br>
+
+### Final thoughts
+----------------------------------
+
+\
+With container technology being on the rise and companies from all different industries starting to adopt it massively, engineering teams need a way to host their container images with ease while also being able to ensure that the registries that are hosting those images are following security standards and best practices.
+
+Azure Container Registry fills that role perfectly, and also offering security controls in terms of encryption, content trust and network access restrictions.
+
+Azure Security Center and Azure Defender for Container Registry are a great way to integrate vulnerability scanning with your container registry images to make sure all images are fine and if any issues arise, you can be notified through the ASC.
