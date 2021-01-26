@@ -71,9 +71,9 @@ Clicking on the recommendations will open up a new blade where you can see more 
 All found vulnerabilities are presented in a list and by clicking on each vulnerability provides an option to drill more into each of those vulnerabilities along with:
 
 * Short description of vulnerability
-* Additional information about the vulnerability such as CVE number, CVSS score, Severity and if vulnerability is patched
+* Additional information about the vulnerability such as CVE number, CVSS score, Severity and if vulnerability is patchable
 * Remediation steps so we can fix if fix is available
-* Information about specific image in our registry that is affected
+* Information about specific image in our registry that is affected by the vulnerability
 
 <img src="https://infrasecurity.xyz/media/asc3.PNG" style="display: block; margin: auto;" />
 
@@ -83,8 +83,8 @@ All found vulnerabilities are presented in a list and by clicking on each vulner
 ----------------------------------
 
 \
-With container technology being on the rise and companies from all different industries starting to adopt it massively, engineering teams need a way to host their container images with ease while also being able to ensure that the registries that are hosting those images are following security standards and best practices.
+With container technology being on the rise and companies from all different industries are starting to adopt it massively, engineering teams need a way to host their container images with ease while also being able to ensure that the registries that are hosting those images are following security standards and best practices.
 
 Azure Container Registry fills that role perfectly, and also offering security controls in terms of encryption, content trust and network access restrictions.
 
-Azure Security Center and Azure Defender for Container Registry are a great way to integrate vulnerability scanning with your container registry images to make sure all images are fine and if any issues arise, you can be notified through the ASC.
+Azure Security Center and Azure Defender for Container Registry are a great way to integrate vulnerability scanning with your container registry images to make sure all images are without any potential critical vulnerabilities and if any issues arise, you can be notified easily through the ASC.
