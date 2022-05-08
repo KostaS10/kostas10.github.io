@@ -26,7 +26,7 @@ Individual files are referred to as Blobs, and Blobs are contained inside of a C
 When we create Storage Account and want to store Blobs inside of it, we need to first create a Container where those Blobs will be stored.
 Other than name that we have to give to that container, we are presented with a choice of defining public access level on the Container.
 
-<img src="https://infrasecurity.xyz/media/containeraccesslevel.PNG" style="display: block; margin: auto;" />
+<img src="https://blog.kloudflame.nl/media/containeraccesslevel.PNG" style="display: block; margin: auto;" />
 
 We will discuss all of these options, and why you may opt for a certain level, depending on your use case.
 
@@ -36,11 +36,11 @@ Setting your Container to Container level means that all container and blob data
 
 In addition, as long as someone has the Storage account name and Container name they can list all of the Blobs located in there.
 
-<img src="https://infrasecurity.xyz/media/blobenum.PNG" style="display: block; margin: auto;" />
+<img src="https://blog.kloudflame.nl/media/blobenum.PNG" style="display: block; margin: auto;" />
 
 Also, direct link to accessing those Blobs is right there, so if we access that URL we see the contents of the Blob.
 
-<img src="https://infrasecurity.xyz/media/publicdocument.PNG" style="display: block; margin: auto;" />
+<img src="https://blog.kloudflame.nl/media/publicdocument.PNG" style="display: block; margin: auto;" />
 
 **Blob level**
 
@@ -48,7 +48,7 @@ This Container access level is more restrictive in a way that anonymous requests
 
 Listing Blobs, however, result in an error shown below.
 
-<img src="https://infrasecurity.xyz/media/enumerror.PNG" style="display: block; margin: auto;" />
+<img src="https://blog.kloudflame.nl/media/enumerror.PNG" style="display: block; margin: auto;" />
 
 **Private level**
 
@@ -79,7 +79,7 @@ There is an option to whitelist public IP addresses and allow them access as wel
 
 Some additional exceptions to the firewall and access restrictions can be configured from the **Exceptions** portion of the configuration. All of the settings are shown in the screenshot below.
 
-<img src="https://infrasecurity.xyz/media/storagenetworking.PNG" style="display: block; margin: auto;" />
+<img src="https://blog.kloudflame.nl/media/storagenetworking.PNG" style="display: block; margin: auto;" />
 
 **Private endpoint connection**
 
@@ -88,7 +88,7 @@ The private endpoints use an IP address from the Virtual Network in your Azure s
 
 What this all means is that the network traffic between the clients and the Storage account goes over the Virtual Network and a private link on the Microsoft backbone network, thus eliminating the need to go throught the internet. Private endpoints can be easily enabled from the same Networking blade in your Storage account settings.
 
-<img src="https://infrasecurity.xyz/media/privateendpoint.PNG" style="display: block; margin: auto;" />
+<img src="https://blog.kloudflame.nl/media/privateendpoint.PNG" style="display: block; margin: auto;" />
 
 <br>
 
